@@ -1,0 +1,56 @@
+.call-timer {
+    display: flex;
+}
+
+.call-timer__timer {
+    margin: auto;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.call-timer__button {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 2rem;
+    border: 2px solid white;
+    color: white;
+    font-size: 3rem;
+    position: relative;
+    margin-left: 1rem;
+    transition: all 0.5s;
+}
+
+.call-timer__button--start .call-timer__icon, .call-timer__button--end .call-timer__icon {
+    transform: translateY(-0.5rem);
+}
+
+.call-timer__button--start {
+    background-color: green;
+    transform: rotate(-90deg);
+}
+
+/* .call-timer__button--start:hover {
+    transform: rotate(-45deg);
+} */
+
+.call-timer__button--end {
+    background-color: red;
+    transform: rotate(-45deg);
+}
+
+/* .call-timer__button--end:hover {
+    transform: rotate(-90deg);
+} */
+
+.call-timer__button--reset {
+    color: #005eb8;
+    background-color: white;
+}
+
+.call-timer__button--reset .call-timer__icon {
+    transform: translateY(-0.4rem);
+}
+
+.call-timer__button--reset:hover {
+    transform: rotate(45deg);
+}

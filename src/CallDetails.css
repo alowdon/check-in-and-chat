@@ -1,0 +1,21 @@
+.call-details {
+    display: flex;
+}
+
+.call-details__name {
+    margin: auto;
+    flex: 1;
+}
+
+.call-details__name-display {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.call-details__name-input {
+    margin: auto;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 0;
+    font-size: 1.5rem;
+}

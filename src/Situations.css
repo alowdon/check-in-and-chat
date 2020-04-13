@@ -1,0 +1,42 @@
+.situation {
+    position: relative;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.situation__text {
+    color: white;
+    background-color: #005eb8;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.situation__text::after {
+    position: absolute;
+    display: inline-block;
+    right: 1rem;
+    content: '▶';
+    transition: all 0.5s;
+}
+
+.situation__text--open {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.situation__text--open::after {
+    transform: rotate(90deg);
+}
+
+.situation__response {
+    display: none;
+    padding: 1rem;
+    border: 1px solid #005eb8;
+    border-top: 0;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.situation__response--open {
+    display: block;
+}
