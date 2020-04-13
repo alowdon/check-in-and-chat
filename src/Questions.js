@@ -6,7 +6,7 @@ const questions = [
         text: "How are you doing today?"
     },
     {
-        text: "Are you managing to get around the house ok?"
+        text: "Are you managing to get around the house OK?"
     },
     {
         text: "How are you feeling today?"
@@ -59,11 +59,11 @@ export const Questions = () => {
     return <div className="questions">
         <div className="questions__summary">
             <p>
-                Introduce yourself and let person know that you are a volunteer who is supporting the NHS Volunteer Responders
+                Introduce yourself and let the person know that you are a volunteer who is supporting the NHS Volunteer Responders
                 programme. You are calling to check in with the person to chat and make sure they are OK.
             </p>
             <p>
-                It’s difficult to pre-empt what types of calls or queries you are likely to getfrom an individual, they may need
+                It’s difficult to pre-empt what types of calls or queries you are likely to get from an individual; they may need
                 some factual information or just some reassurance during these challenging times. Rest assured that there will be
                 people available to support you if you are faced with a query that raises concerns. Contact the Support Team if
                 you have concerns over the people you are supporting.

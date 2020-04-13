@@ -13,6 +13,22 @@ const hints = [
 
 export const HintsAndTips = () => {
     return <div className="hints-and-tips">
+        <p>
+            Thank you for offering your time to provide telephone support to a person who is isolating. A check in
+            and chat call can make all the difference to someone who is lonely at this time.
+        </p>
+
+        <p>
+            Telephone support is a positive step to engage with people who may have little or no contact with others,
+            a consequence of self-isolating may lead to issues with confidence, self-esteem, and loneliness.
+        </p>
+
+        <p>
+            This support you will be giving is a one-off phone call that can be flexible to suit the time you have available
+            to give, and also the time that the interaction takes place. The aim is to ensure that the wellbeing of the
+            isolated person is taken into consideration and possibly identify any practical support they may require.
+        </p>
+
         <ol className="hints-and-tips__list">
             {hints.map(hint => <li key={hint} className="hints-and-tips__item">{hint}</li>)}
         </ol>

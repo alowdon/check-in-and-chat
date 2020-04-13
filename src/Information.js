@@ -26,7 +26,7 @@ const panels = (() => {
 export const Information = () => {
     const [panel, setPanel] = useState(InformationPanel.HintsAndTips);
 
-    let panelElement = <HintsAndTips />;
+    let panelElement;
 
     switch (panel) {
         case InformationPanel.Dementia:
@@ -37,6 +37,9 @@ export const Information = () => {
             break;
         case InformationPanel.MentalHealth:
             panelElement = <MentalHealth />;
+            break;
+        default:
+            panelElement = <HintsAndTips />;
             break;
     }
 

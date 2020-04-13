@@ -20,7 +20,7 @@ export const Dementia = () => {
         <p>
             If you are worried about the person you&rsquo;re supporting and their memory, or if they inform you they are struggling with
             their dementia or someone they care for with dementia, please call the Support Team. If you want more information about
-            dementia, please visit <a href="http://www.alzheimers.org.uk" target="_blank">www.alzheimers.org.uk</a>.
+            dementia, please visit <a href="http://www.alzheimers.org.uk" target="_blank" rel="noopener noreferrer">www.alzheimers.org.uk</a>.
         </p>
     </div>;
 }
