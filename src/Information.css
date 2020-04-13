@@ -1,10 +1,41 @@
 .information {
     flex: 1;
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .information__title {
     font-size: 1.3rem;
     font-weight: bold;
     padding-bottom: 1rem;
+}
+
+.information__tabs {
+    display: flex;
+    font-size: 1.2rem;
+}
+
+.information__tab {
+    border: 4px solid #005eb8;
+    border-bottom: none;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.information__tab+.information__tab {
+    border-left: none;
+}
+
+.information__tab--active {
+    color: white;
+    background-color: #005eb8;
+}
+
+.information__content {
+    border: 4px solid #005eb8;
+    padding: 1rem;
+    flex: 1;
+    overflow: auto;
 }

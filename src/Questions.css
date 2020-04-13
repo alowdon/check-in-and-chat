@@ -2,12 +2,9 @@
     flex: 1;
     padding: 1rem;
     overflow: auto;
-    border-right: 1px solid #005eb8;
 }
 
-.questions__title {
-    font-size: 1.3rem;
-    font-weight: bold;
+.questions__summary {
     padding-bottom: 1rem;
 }
 

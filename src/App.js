@@ -11,8 +11,8 @@ function App() {
         <CallDetails />
       </div>
       <div className="content">
-        <Information />
         <Questions />
+        <Information />
       </div>
       <div className="footer">
         <div className="support-number">Support Team: 0808 196 3382</div>
