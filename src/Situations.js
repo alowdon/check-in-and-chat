@@ -36,18 +36,21 @@ const situations = [
     },
 ];
 
-const Situation = ({ situation, response }) => {
-    const [isOpen, setIsOpen] = useState(false);
-    const toggleVisibility = () => setIsOpen(!isOpen);
-
-    return <div className="situation" onClick={toggleVisibility}>
-        <div className={`situation__text ${isOpen ? "situation__text--open" : ""}`}>{situation}</div>
-        <div className={`situation__response ${isOpen ? "situation__response--open" : ""}`}>{response}</div>
+const Situation = ({ situation, response, isActive, setActiveSituation }) => {
+    return <div className="situation" onClick={() => setActiveSituation(isActive ? null : situation)}>
+        <div className={`situation__text ${isActive ? "situation__text--open" : ""}`}>{situation}</div>
+        <div className={`situation__response ${isActive ? "situation__response--open" : ""}`}>{response}</div>
     </div>;
 }
 
 export const Situations = () => {
+    const [activeSituation, setActiveSituation] = useState(null);
+
     return <div className="situations">
-        {situations.map(s => <Situation key={s.situation} {...s} />)}
+        {situations.map(s => <Situation
+            key={s.situation}
+            isActive={s.situation === activeSituation}
+            setActiveSituation={setActiveSituation}
+            {...s} />)}
     </div>;
 }
